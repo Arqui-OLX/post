@@ -1,0 +1,18 @@
+version: "2"
+services:
+ post-ms:
+  image: node:10
+  ports: 
+   - "3000:3000"
+  depends_on:
+   - post-db
+
+ post-db:
+  image: mysql:5.7 
+  environment:
+   MYSQL_ROOT_PASSWORD: 123 
+   MYSQL_DATABASE: post-db 
+   MYSQL_USER: cris 
+   MYSQL_PASSWORD: 123 
+  ports: 
+   - "3306:3306"
