@@ -1,10 +1,10 @@
   {
     "type": "mysql",
-    "host": "mysql_db_1",
+    "host": "post-db",
     "port": 3306,
     "username": "root",
     "password": "secret",
-    "database": "app",
+    "database": "post-db",
     "entities": ["src/entity/*.js"],
     "logging": true,
     "synchronize": true

@@ -27,12 +27,12 @@ var Post = /** @class */ (function () {
     ], Post.prototype, "description", void 0);
     __decorate([
         typeorm_1.Column(),
-        __metadata("design:type", String)
-    ], Post.prototype, "datePublication", void 0);
+        __metadata("design:type", Date)
+    ], Post.prototype, "date_publication", void 0);
     __decorate([
         typeorm_1.Column(),
-        __metadata("design:type", String)
-    ], Post.prototype, "dateExpiration", void 0);
+        __metadata("design:type", Date)
+    ], Post.prototype, "date_expiration", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", Number)

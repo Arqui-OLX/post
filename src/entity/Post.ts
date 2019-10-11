@@ -14,10 +14,10 @@ export class Post {
     description: string;
 
     @Column()
-    datePublication: string;
+    date_publication: Date;
 
     @Column()
-    dateExpiration: string;
+    date_expiration: Date;
 
     @Column()
     fk_product: number;
